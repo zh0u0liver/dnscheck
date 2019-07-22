@@ -47,6 +47,7 @@ if __name__ == '__main__':
     # parser.add_argument("echo")
     parser.add_argument("host_file_name", action="store", help="spcify a hosts file name which need be resolved")
     parser.add_argument("-o", action="store", dest="output_file_name", help="output file name")
+    parse_result = None
     try:
         parse_result = parser.parse_args()
     except argparse.ArgumentError:
